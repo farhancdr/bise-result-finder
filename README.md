@@ -39,10 +39,9 @@ students' details — don't paste it into issues or screenshots.
 Node 18 or newer, no dependencies, nothing to install:
 
 ```bash
-npx git+ssh://git@github.com/farhancdr/bise-result-finder.git 123456 rafi --father "kamal uddin"
+npx github:farhancdr/bise-result-finder 123456 rafi --father "kamal uddin"
 ```
 
-That works straight from the private repo over your existing GitHub SSH key.
 If this is ever published to npm, the short form works too:
 
 ```bash
@@ -52,7 +51,7 @@ npx bise-result-finder 123456 rafi
 Run it often? Install it once instead:
 
 ```bash
-npm install -g git+ssh://git@github.com/farhancdr/bise-result-finder.git
+npm install -g github:farhancdr/bise-result-finder
 bise-result 123456 rafi
 ```
 
