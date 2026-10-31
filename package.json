@@ -1,0 +1,22 @@
+{
+  "name": "bise-result-finder",
+  "version": "1.0.0",
+  "description": "Find a student's HSC result on a Bangladesh education board site by institution EIIN and name",
+  "bin": {
+    "bise-result": "bin/cli.js"
+  },
+  "main": "src/search.js",
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "node --check bin/cli.js && node --check src/client.js && node --check src/roster.js && node --check src/result.js && node --check src/search.js && node --check src/cache.js && node --check src/format.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true
+}
